@@ -1,4 +1,51 @@
 # 簡易なVerilogシミュレーション＆波形表示Jupyterノートブック
+三浦克介 <miura.katsuyoshi@gmail.com>
+v1.0, 2021-06-12
+:imagesdir: README_Images
+:homepage: https://github.com/miura-katsuyoshi/yurubinoya_schedule_display
+:toc: left
+:sectnums:
+:toclevels: 3
+:xrefstyle: short
+:icons: font
+:appendix-caption: 付録
+:caution-caption: 注意
+:example-caption: 例
+:figure-caption: 図
+:important-caption: 重要
+:last-update-label: 最終更新
+:listing-caption: リスト
+:note-caption: 備考
+:table-caption: 表
+:toc-title: 目次
+:warning-caption: 警告
 
 https://colab.research.google.com/github/miura-katsuyoshi/VerilogSimulation.ipynb/blob/main/VerilogSimulation.ipynb[Google Colaboratory で表示]
 
+## 概要
+
+http://iverilog.icarus.com/[Icarus Verilog (iverilog)] でコンパイル＆実行し、https://matplotlib.org/[Matplotlib] で波形表示する、Verilog HDL の簡易シミュレーション＆波形表示 Jupyter ノートブックです。
+
+Google Colaboratory 上で、Verilog シミュレーションして、波形表示できます。実行するには、Google アカウントでのログインが必要です。
+
+## 使い方
+
+. このノートブックを、 https://colab.research.google.com/github/miura-katsuyoshi/VerilogSimulation.ipynb/blob/main/VerilogSimulation.ipynb[Google Colaboratory で開きます]。
+
+. 最初のコードセルを実行し、 http://iverilog.icarus.com/[Icarus Verilog (iverilog)] をインストールします。
++
+NOTE: この際、Google アカウントでのログインを求められます（未ログインの場合）。
+
+. 2番目のコードセルの `verilog_source = """` から `"""` の間に、Verilog ソースコードを記述します。
++
+initial ブロックの先頭で、 `$display` 関数を用いて、波形表示する信号名をコンマ区切りで表示するようにしてください。1カラム目は横軸のラベルになります。複数ビットの信号は、信号名の後に `*` を付けてください。
++
+NOTE: `*` の後にスペースを入れないでください。
++
+`$monitor` 関数を用いて、波形表示する信号の値を表示するようにしてください。1カラム目は `$realtime` で時刻を表示してください。
+
+. 2番目のコードセルを実行します。
++
+NOTE: エラーが出た場合は、エラーメッセージをよく読んで、Verilog ソースコードを修正してください。
+
+. 3番目のコードセルを実行すると、セルの下側に波形が表示されます。

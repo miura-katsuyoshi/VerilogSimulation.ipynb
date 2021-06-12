@@ -24,7 +24,7 @@ https://colab.research.google.com/github/miura-katsuyoshi/VerilogSimulation.ipyn
 
 ## 概要
 
-http://iverilog.icarus.com/[Icarus Verilog (iverilog)] でコンパイル＆実行し、https://matplotlib.org/[Matplotlib] で波形表示する、Verilog HDL の簡易シミュレーション＆波形表示 Jupyter ノートブックです。
+http://iverilog.icarus.com/[Icarus Verilog (iverilog)] でコンパイル＆実行し、 https://matplotlib.org/[Matplotlib] で波形表示する、Verilog HDL の簡易シミュレーション＆波形表示 Jupyter ノートブックです。
 
 Google Colaboratory 上で、Verilog シミュレーションして、波形表示できます。実行するには、Google アカウントでのログインが必要です。
 

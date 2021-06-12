@@ -32,9 +32,11 @@ Google Colaboratory 上で、Verilog シミュレーションして、波形表�
 
 . このノートブックを、 https://colab.research.google.com/github/miura-katsuyoshi/VerilogSimulation.ipynb/blob/main/VerilogSimulation.ipynb[Google Colaboratory で開きます]。
 
-. 最初のコードセルを実行し、 http://iverilog.icarus.com/[Icarus Verilog (iverilog)] をインストールします。
+. ファイル -> ドライブにコピーを保存。
 +
-NOTE: この際、Google アカウントでのログインを求められます（未ログインの場合）。
+NOTE: Google アカウントでのログインを求められます（未ログインの場合）。
+
+. 最初のコードセルを実行し、 http://iverilog.icarus.com/[Icarus Verilog (iverilog)] をインストールします。
 
 . 2番目のコードセルの `verilog_source = """` から `"""` の間に、Verilog ソースコードを記述します。
 +

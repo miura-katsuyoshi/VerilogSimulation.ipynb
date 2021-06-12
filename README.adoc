@@ -1,0 +1,4 @@
+# 簡易なVerilogシミュレーション＆波形表示Jupyterノートブック
+
+https://colab.research.google.com/github/miura-katsuyoshi/VerilogSimulation.ipynb/blob/main/VerilogSimulation.ipynb[Google Colaboratory で表示]
+
